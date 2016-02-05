@@ -18,7 +18,7 @@ class Instructor::SectionsController < ApplicationController
       render text: "Unauthorized", status: :unauthorized
     end
   end
-  
+
   helper_method :current_course
   def current_course
     @current_course ||= Course.find(params[:course_id])
@@ -27,5 +27,4 @@ class Instructor::SectionsController < ApplicationController
   def section_params
     params.require(:section).permit(:title)
   end
-
 end
