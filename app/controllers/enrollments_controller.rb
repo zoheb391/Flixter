@@ -5,7 +5,7 @@ class EnrollmentsController < ApplicationController
 		current_user.enrollments.create(course: current_course)
     	redirect_to course_path(current_course)
  	end
-	end
+	
 
 	private
 
