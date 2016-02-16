@@ -42,6 +42,7 @@
     <%= @course.description %>
   </div>
 
+  <% section.lessons.rank(:row_order).each do |lesson| %>
   <div class="col-xs-12">
     <% @course.sections.each do |section| %>
       <br /><br />
